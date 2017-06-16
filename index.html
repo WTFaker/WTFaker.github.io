@@ -1,171 +1,48 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-		<meta charset="UTF-8"/>
-    		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <meta name="google-site-verification" content="okQaMClYWnhZqi5CBI1QD9nZrfM-Fy1zeKdBmEdbLpk" />
-        <meta name="google-site-verification" content="2W9xGyFmr8srX1edPlAsA_iioL00U4KbZXuG4rjoLno" />
-        <meta http-equiv='cache-control' content='no-cache'>
-        <meta http-equiv='expires' content='0'>
-        <meta http-equiv='pragma' content='no-cache'>
-		<title>WTFaker</title>
-		<link rel="icon" href="icon.png" type="image/png" sizes="512x512">
-		<style type="text/css">body, a, a:link{cursor:url(cursor.cur), default;} a:hover {cursor:url(cursor2.cur),wait;}</style>
-		<link rel="stylesheet" type="text/css" href="main.css">
-
-    </head>
+	<meta charset="UTF-8">
+	<script language="javascript" type="text/javascript" src="js/main.js.html"></script>
+	<title>Chaykovsky</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,300' rel='stylesheet' type='text/css'>
+</head>
 <body>
-<script type="text/javascript">
-function play()
-{
-    var a = Math.random()*2;
-    a=Math.floor(a);
+<video id="boostedbox" autoplay="autoplay" loop="loop">
+    <source src="vid/amv.mp4" type="video/mp4"></source>
+</video>
+	<div class="animated container">
+        <div class="logo">
 
-    if(a==1)
-    {
-        document.getElementById('soundtrack').innerHTML="<audio id='background_audio1' loop autoplay><source src='song1.mp3' type='audio/mp3'></audio>";
-    }
-    if(a==0)
-    {
-        document.getElementById('soundtrack').innerHTML="<audio id='background_audio1' loop autoplay><source src='song2.mp3' type='audio/mp3'></audio>";
-    }
-}
-</script>
-<body onload="play()">
-<div id="soundtrack">
+        </div>
+        <section class="social">
+			<ul>
+				<li class="animated">
+					<a href="https://vk.com/3wtfaker3" target="_blank" class="tooltip">
+						<i class="fa fa-vk" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="animated">
+				     <a href="http://steamcommunity.com/id/_WTFaker_" target="_blank">
+				      <i class="fa fa-steam"></i>
+			         </a>
+				</li>
+			</ul>
+		</section>
+			<section class="heading">
+            <h2 class="animated">Hacker</h2>
+                <div class="nick"><h1 class="animated">WTFaker</h1></div>
 
-</div>
-<div class="loaderArea">
-   <div class="msg">Hello</div>
-</div>
-    <style>html { overflow:  hidden; }</style>
-<div id="loading"> WTFaker</div>
-<div class="overlay"></div>
-<div class="terminal">
-  <h1>Kak<span class="errorcode">dela</span>?</h1>
-    <p class="output">My nickname is<span class="errorcode">WTFaker</span></p>
-  <p class="output">My Social Links: <a href="https://vk.com/3wtfaker3" target="_blank">VK</a> / <a href="https://steamcommunity.com/id/_wtfaker_" target="_blank">Steam</a></p>
-  <p class="output">My Team: <a href="https://vk.com/3hackerspace3" target="_blank">HackerSpace</a></p>
 
-</div>
-
-  <script src='jquery.min.js'></script>
-    <script src="script.js"></script>
-
-	<script>
-$(function() {
-var title = document.title,
-animSeq = ["-", "/", "\\", "|", "/"],
-animIndex = 0,
-titleIndex = 0;
-function doInverseSpinZeroPitch() {
-var loadTitle = title.substring(0, titleIndex);
-if (titleIndex > title.length) {
-animIndex = 0;
-titleIndex = 0
-}
-if (animIndex > 3) {
-titleIndex++;
-animIndex = 0
-}
-document.title = loadTitle + animSeq[animIndex];
-animIndex++
-}
-window.setInterval(doInverseSpinZeroPitch, 250);
-});
-</script>
-
-	<script language=JavaScript>
-      <!--
-var message="Privet";
-///////////////////////////////////
-      function clickIE4(){
-      if (event.button==2){
-      alert(message);
-      return false;
-      }
-      }
-function clickNS4(e){
-      if (document.layers||document.getElementById&&!document.all){
-      if (e.which==2||e.which==3){
-      alert(message);
-      return false;
-      }
-      }
-      }
-if (document.layers){
-      document.captureEvents(Event.MOUSEDOWN);
-      document.onmousedown=clickNS4;
-      }
-      else if (document.all&&!document.getElementById){
-      document.onmousedown=clickIE4;
-      }
-document.oncontextmenu=new Function("alert(message);return false")
-// -->
-      </script>
-	  <script type="text/javascript">
-
-function preventSelection(element){
-  var preventSelection = false;
-
-  function addHandler(element, event, handler){
-    if (element.attachEvent)
-      element.attachEvent('on' + event, handler);
-    else
-      if (element.addEventListener)
-        element.addEventListener(event, handler, false);
-  }
-  function removeSelection(){
-    if (window.getSelection) { window.getSelection().removeAllRanges(); }
-    else if (document.selection && document.selection.clear)
-      document.selection.clear();
-  }
-  function killCtrlA(event){
-    var event = event || window.event;
-    var sender = event.target || event.srcElement;
-
-    if (sender.tagName.match(/INPUT|TEXTAREA/i))
-      return;
-
-    var key = event.keyCode || event.which;
-    if (event.ctrlKey && key == 'A'.charCodeAt(0))
-    {
-      removeSelection();
-
-      if (event.preventDefault)
-        event.preventDefault();
-      else
-        event.returnValue = false;
-    }
-  }
-  addHandler(element, 'mousemove', function(){
-    if(preventSelection)
-      removeSelection();
-  });
-  addHandler(element, 'mousedown', function(event){
-    var event = event || window.event;
-    var sender = event.target || event.srcElement;
-    preventSelection = !sender.tagName.match(/INPUT|TEXTAREA/i);
-  });
-  addHandler(element, 'mouseup', function(){
-    if (preventSelection)
-      removeSelection();
-    preventSelection = false;
-  });
-  addHandler(element, 'keydown', killCtrlA);
-  addHandler(element, 'keyup', killCtrlA);
-}
-
-preventSelection(document);
-</script>
-
-<script>
-    document.onkeydown = function(e) {
-        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) { //Alt+c, Alt+v will also be disabled sadly.
-        }
-        return false;
-    };
-</script>
-
+			<br>
+		</section>
+	</div>
+	<div id="particles"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/particles.min.js"></script>
+	<script type="text/javascript" src="assets/js/actions.js"></script>
 </body>
 </html>
