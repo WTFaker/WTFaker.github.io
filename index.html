@@ -9,7 +9,34 @@
 
     </div>
 	
-	
+	<audio autoplay="1" loop="" id="player">
+								<source src="assets\2.mp3">
+										<script>
+											var audio = document.currentScript.parentElement;
+											audio.autoplay=true;
+											audio.play();
+											audio.volume = 0.13;
+										
+											function startstop() {
+												var audiobt = document.getElementById("startstop");
+												if (audio.paused)
+												{
+													audio.play();
+													audiobt.value = "<!-- Stop Music -->";
+													audiobt.style = "background-color: Transparent; border: none; text-shadow: blue 0 0 5px;"
+												}
+												else
+												{
+													audio.pause();
+													audiobt.value = "<!-- Start Music -->";
+													audiobt.style = "background-color: Transparent; border: none; text-shadow: red 0 0 5px;"
+													logcount += 1;
+													document.getElementById('injected').innerHTML += '<div id="warn" ><span id="tag"> </span>Music paused.</div>';				
+													CheckLimit();
+												}
+											}
+										</script>
+							  </audio>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
