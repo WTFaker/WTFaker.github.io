@@ -142,7 +142,7 @@
                      <div class="entry-content"></div>
                   </article>
                </div>
-		<div class="musicbutton"><input type="button" value="<!-- Stop Music -->" onclick="startstop()" id="startstop" style="background-color: Transparent; border: none; text-shadow: red 0 0 2px;"></div>
+		
             </main>
             <footer class="site-footer">
                <div class="widget widget-countdown m-t-64">
@@ -170,35 +170,8 @@
 </script>
 
 			  
-	 <audio autoplay="" loop="" id="player">
-         <source src="assets/5.mp3">
-			<script>
-				var audio = document.currentScript.parentElement;
-                //audio.currentTime = 5;
-				audio.autoplay=true;
-                audio.play();
-				audio.volume = 0.13;
-				
-				function startstop() {
-	            var audiobt = document.getElementById("startstop");
-				if (audio.paused)
-				{
-				audio.play();
-			    audiobt.value = "<!-- Stop Music -->";
-				audiobt.style = "background-color: Transparent; border: none; text-shadow: red 0 0 2px;"
-				}
-			    else
-				{
-				audio.pause();
-				audiobt.value = "<!-- Start Music -->";
-				audiobt.style = "background-color: Transparent; border: none; text-shadow: orange 0 0 2px;"
-				}
-                }
-			</script></audio>		  
-			  
-			  
-			  
-			  
+		  
+			  			  			  			  
                      <script type="text/javascript">
                         function clock() {
                         var d = new Date();
