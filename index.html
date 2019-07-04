@@ -259,17 +259,14 @@
 	<script src="js/jquery-3.4.1.min.js"></script>	 
         <script type="text/javascript">
 	
-<script language="JavaScript">
-document.ondragstart = test;
-//запрет на перетаскивание 
-document.onselectstart = test;
-//запрет на выделение элементов страницы
-document.oncontextmenu = test;
-//запрет на выведение контекстного меню
-function test() {
-document.oncontextmenu=new Function("alert(message);return false")
-return false
-}
+<script type="text/javascript">
+$("body").on("contextmenu", false);
 </script>
+<script type="text/javascript">
+$("main").on("contextmenu", false);
+</script>
+<script type="text/javascript">
+$("head").on("contextmenu", false);
+</script>		 
    </body>      
 </html>
