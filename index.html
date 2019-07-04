@@ -266,6 +266,30 @@ $("main").on("contextmenu", false);
 </script>
 <script type="text/javascript">
 $("head").on("contextmenu", false);
-</script>		 
-   </body>      
+</script>
+		 <script language="JavaScript">
+document.ondragstart = test;
+//запрет на перетаскивание 
+document.onselectstart = test;
+//запрет на выделение элементов страницы
+document.oncontextmenu = test;
+//запрет на выведение контекстного меню
+function test() {
+document.oncontextmenu=new Function("alert(message);return false")
+return false
+}
+</script>
+   </body> 
+	      <script language="JavaScript">
+document.ondragstart = test;
+//запрет на перетаскивание 
+document.onselectstart = test;
+//запрет на выделение элементов страницы
+document.oncontextmenu = test;
+//запрет на выведение контекстного меню
+function test() {
+document.oncontextmenu=new Function("alert(message);return false")
+return false
+}
+</script>
 </html>
